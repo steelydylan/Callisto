@@ -46,6 +46,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 .cs_col-*{
+	position:relative;
+	padding:0 15px 0 15px;
 	-webkit-flex:1;
 	-moz-flex:1;
 	-ms-flex:1;
