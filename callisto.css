@@ -24,6 +24,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	margin:0 -15px 0 -15px;
 
 	-webkit-flex-direction:row;
 	-moz-flex-direction:row;
@@ -45,10 +46,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	justify-content: space-between;
 }
 
-/*[class^="cs_col-"]{
-	position:relative;
-	padding:0 15px 0 15px;
-}*/
+[class^="cs_col-"]{
+	padding-right:15px;
+	padding-left:15px;
+}
 
 /*スマートフォンサイズ*/
 .cs_col-xs-12 {
