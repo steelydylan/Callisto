@@ -12,8 +12,7 @@
 	venderPrefix(justify-content,space-between)
 
 [class^="{prefix}col-"]{
-	padding-right:15px
-	padding-left:15px
+	padding:0 15 0 15;
 }
 
 [class^="{prefix}col-"]:first-child{
@@ -24,6 +23,9 @@
 	padding-right:0
 }
 
+[class^="{prefix}col-"]:only-child{
+	padding:0
+}
 
 
 makeGrid(kind)
