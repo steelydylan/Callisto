@@ -490,4 +490,30 @@ select {
   background-color: #eaeaea;
   word-wrap: break-word;
 }
+.cs-btn {
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 30px;
+  color: inherit;
+}
+.cs-btn-default {
+  background-color: #ccc;
+}
+.cs-btn-warning {
+  background-color: #ff8c00;
+}
+.cs-btn-info {
+  background-color: #00ced1;
+}
+.cs-btn-danger {
+  background-color: #dc143c;
+}
+.cs-btn-success {
+  background-color: #0f0;
+}
+.cs-btn-primary {
+  background-color: #00f;
+}
 
