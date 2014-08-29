@@ -1,3 +1,4 @@
+/*担当者　堀*/
 .{prefix}row
 	display: -webkit-flex
 	display: -moz-flex
@@ -5,26 +6,9 @@
 	display: -o-flex
 	display: flex
 	margin:0 -15px 0 -15px
-
-	-webkit-flex-direction:row
-	-moz-flex-direction:row
-	-ms-flex-direction:row
-	-o-flex-direction:row
-	flex-direction:row
-
-	-webkit-flex-wrap: wrap
-	-moz-flex-wrap: wrap
-	-ms-flex-wrap: wrap
-	-o-flex-wrap: wrap
-	flex-wrap: wrap
-
-	
-	-webkit-justify-content: space-between
-	-moz-justify-content: space-between
-	-ms-justify-content: space-between
-	-o-justify-content: space-between
-	justify-content: space-between
-
+	venderPrefix(flex-direction,row)
+	venderPrefix(flex-wrap,wrap)
+	venderPrefix(justify-content,space-between)
 
 [class^="{prefix}col-"]
 	padding-right:15px

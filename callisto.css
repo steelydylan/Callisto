@@ -1,6 +1,3 @@
-* {
-  box-sizing: border-box;
-}
 html,
 body,
 div,
@@ -149,6 +146,9 @@ hr {
 input,
 select {
   vertical-align: middle;
+}
+* {
+  box-sizing: border-box;
 }
 .cs-row {
   display: -webkit-flex;
