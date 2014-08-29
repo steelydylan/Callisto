@@ -491,29 +491,46 @@ select {
   word-wrap: break-word;
 }
 .cs-btn {
+  border: none;
+  color: #fff;
+  overflow: hidden;
+  margin: 1rem;
+  padding: 0;
+  text-transform: uppercase;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
   display: inline-block;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  height: 30px;
-  line-height: 30px;
-  color: inherit;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }
 .cs-btn-default {
-  background-color: #ccc;
+  background-color: #333;
+  color: #fff;
 }
 .cs-btn-warning {
-  background-color: #ff8c00;
+  background-color: #333;
+  color: #fff;
 }
 .cs-btn-info {
   background-color: #00ced1;
+  color: #fff;
 }
 .cs-btn-danger {
   background-color: #dc143c;
+  color: #fff;
 }
 .cs-btn-success {
-  background-color: #0f0;
+  background-color: #00ced1;
+  color: #fff;
 }
 .cs-btn-primary {
   background-color: #00f;
+  color: #fff;
 }
 
