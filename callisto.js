@@ -19,14 +19,6 @@ $(function(){
 
 	/*マテリアルデザインを適応したいボタンに付与すると実行される*/
 	$('[data-type=cs-btn]').click(function(){
-		$(this).addClass("active").delay().removeClass("active");
+		$(this).addClass("active").delay(300).removeClass("active");
 	});
 });
-
-  this.setAttribute('class', 'android-btn active');
-  
-  var self = this;
-  setTimeout(function () {
-    self.removeAttribute('class', 'active');
-    self.setAttribute('class', 'android-btn');
-  }, 300)
