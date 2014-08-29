@@ -150,13 +150,48 @@ select {
 * {
   box-sizing: border-box;
 }
+.clearfix:after,
+.clearfix:before {
+  content: '';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.cs-float-left {
+  float: left !important;
+}
+.cs-float-right {
+  float: right !important;
+}
+.cs-h1 {
+  font-size: 36px;
+}
+.cs-h2 {
+  font-size: 24px;
+}
+.cs-h3 {
+  font-size: 20px;
+}
+.cs-h4 {
+  font-size: 18px;
+}
+.cs-h5 {
+  font-size: 14px;
+}
+.container {
+  max-width: 960px;
+}
 .cs-row {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  margin: 0 -15px 0 -15px;
+  overflow-x: hidden;
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
   -ms-flex-direction: row;
@@ -173,9 +208,17 @@ select {
   -o-justify-content: space-between;
   justify-content: space-between;
 }
-[class^="cs-col-"] {
-  padding-right: 15px;
-  padding-left: 15px;
+[class^="cs-col-"]{
+	padding-right:15px
+	padding-left:15px
+}
+
+[class^="cs-col-"]:first-child{
+	padding-left:0
+}
+
+[class^="cs-col-"]:last-child {
+  padding-right: 0;
 }
 .cs-col-xs-1 {
   width: 8.333333333333334%;
