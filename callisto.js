@@ -16,4 +16,9 @@ $(function(){
 		var target = $(this).data("target");
 		$(target).hideModal();
 	});
+
+	/*マテリアルデザインを適応したいボタンに付与すると実行される*/
+	$('[data-type=cs-btn]').click(function(){
+
+	});
 });
