@@ -7,6 +7,8 @@
     <meta http-equiv="expires" content="Sat, 31 Aug 2002 17:35:42 GMT">
     <meta http-equiv="x-ua-compatible" content="IE=10">
     <link rel="stylesheet" href="callisto.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="callisto.js"></script>
     <style>
     	#a{
     		background-color:#ff0000;
@@ -35,27 +37,33 @@
     </style>
   </head>
   <body>
-    <div class="cs_row">
-    	<div class="cs_col-xs-12 cs_col-sm-3 cs_col-sm-order-1 cs_col-xs-order-2">
+  	<div class="cs-modal" id="target">
+  		<div class="cs-modal_contents">
+  			<a data-target="#target" data-toggle="hideModal">×</a>
+  		</div>
+  	</div>
+    <div class="cs-row">
+    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-1 cs-col-xs-order-2">
     		<div id="a">
     			縮めると2番目に来ます
     		</div>
     	</div>
-    	<div class="cs_col-xs-12 cs_col-sm-3 cs_col-sm-order-2 cs_col-xs-order-1">
+    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-2 cs-col-xs-order-1">
     		<div id="b">
     			縮めると1番目に来ます
     		</div>
     	</div>
-    	<div class="cs_col-xs-12 cs_col-sm-3 cs_col-sm-order-3 cs_col-xs-order-4">
+    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-3 cs-col-xs-order-4">
     		<div id="c">
     			縮めると4番目に来ます
     		</div>
     	</div>
-    	<div class="cs_col-xs-12 cs_col-sm-3 cs_col-sm-order-4 cs_col-xs-order-3">
+    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-4 cs-col-xs-order-3">
     		<div id="d">
     			縮めると3番目に来ます
     		</div>
     	</div>
     </div>
+    <a class="cs-btn" href="#" data-target="#target" data-toggle="showModal">クリック</a>
   </body>
 </html>
