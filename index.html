@@ -10,13 +10,62 @@
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="callisto.js"></script>
   </head>
+  <style>
+  	#hero{
+  		background-color:#FFFFFF;
+  		background-image:url(./images/sos.png);
+  		text-align: center;
+  		margin-bottom:20px;
+  		color:#008CBA;
+  		font-size:20px;
+  		line-height:1.5;
+  		padding:30px;
+  	}
+  	#hero_heading{
+  		font-size:50px;
+  		font-weight:bold;
+  		margin-bottom:30px;
+  	}
+  	#a{
+  		height:60px;
+  		line-height:40px;
+  		background-color:#008CBA;
+  		color:#FFFFFF;
+  		padding:10px;
+  	}
+  	#b{
+   		height:60px;
+  		line-height:40px;
+  		background-color:#FFFFFF;
+  		padding:10px;
+  	}
+  	#c{
+  		height:60px;
+  		line-height:40px;
+  		background-color:#008CBA;
+  		color:#FFFFFF;
+  		padding:10px;
+  	}
+  	#d{
+  		height:60px;
+  		line-height:40px;
+  		background-color:#FFFFFF;
+  		padding:10px;
+  	}
+  </style>
   <body>
   	<div class="cs-modal" id="target">
   		<div class="cs-modal_contents">
   			<a data-target="#target" data-toggle="hideModal">×</a>
   		</div>
   	</div>
+	<div id="hero">
+		<h1 id="hero_heading">Callisto</h1>
+		<p>Cut of edge flex-box oriented CSS framework</p>
+		<p>Every design is materialized</p>
+	</div>
   	<div class="cs-container">
+  		<h2 class="cs-h1">1. Grid System</h2>
 	    <div class="cs-row">
 	    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-1 cs-col-xs-order-2">
 	    		<div id="a">
