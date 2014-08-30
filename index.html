@@ -13,7 +13,6 @@
   <style>
   	#hero{
   		background-color:#FFFFFF;
-  		background-image:url(./images/sos.png);
   		text-align: center;
   		margin-bottom:20px;
   		color:#008CBA;
@@ -31,9 +30,14 @@
   	}
   </style>
   <body>
-  	<div class="cs-modal" id="target">
+  	<div class="cs-modal cs-modal-primary" id="target">
   		<div class="cs-modal_content">
-  			<a data-target="#target" data-toggle="hideModal">×</a>
+	  		<div class="cs-modal_heading">
+				cs-modal
+			</div>
+			<div class="cs-modal-body">
+				本文だよ
+			</div>
   		</div>
   	</div>
 	<div id="hero">
@@ -77,6 +81,29 @@
 		    			cs-col-xs-order-3
 		    		</div>
 		    	</div>
+		    </div>
+		    <h2 class="cs-h2">1.2 Grid System With Sortable</h2>
+		    	<div class="cs-row">
+			    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-1" data-type="sortable">
+			    		<div class="cs-card cs-card-primary">
+			    			1
+			    		</div>
+			    	</div>
+			    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-2" data-type="sortable">
+			    		<div class="cs-card">
+			    			2
+			    		</div>
+			    	</div>
+			    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-3" data-type="sortable">
+			    		<div class="cs-card cs-card-primary">
+			    			3
+			    		</div>
+			    	</div>
+			    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-4" data-type="sortable">
+			    		<div class="cs-card">
+			    			4
+			    		</div>
+			    	</div>
 		    </div>
 		</section>
 		<section class="ex-section">

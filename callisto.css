@@ -546,24 +546,30 @@ body {
   width: 100%;
   height: 100%;
 }
-.cs-modal_headding {
-  font-size: 24px;
-  line-height: 40px;
-  height: 40px;
-  background-color: #333;
-  color: #fff;
-}
-.cs-modal_heading-primary {
-  background-color: #008cba;
-}
 .cs-modal_content {
   width: 500px;
   height: 500px;
   margin: 50px auto;
   border-radius: 3px;
-  padding: 10px;
   background-color: #eaeaea;
   word-wrap: break-word;
+}
+.cs-modal_heading {
+  font-size: 24px;
+  padding: 10px;
+  line-height: 20px;
+  height: 40px;
+  background-color: #333;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  color: #fff;
+}
+.cs-modal-primary .cs-modal_heading {
+  background-color: #008cba;
+  color: #fff;
+}
+.cs-modal-body {
+  padding: 20px;
 }
 .cs-btn {
   border: none;
@@ -609,9 +615,9 @@ body {
   color: #fff;
 }
 .cs-card {
-  -webkit-box-shadow: rgba(0,0,0,0.239) 0px 3px 4px 0px;
+  -webkit-box-shadow: #ddd 0px 3px 4px 0px;
   background-color: #fff;
-  box-shadow: rgba(0,0,0,0.239) 0px 3px 4px 0px;
+  box-shadow: #ddd 0px 3px 4px 0px;
   padding: 15px;
   margin-bottom: 5px;
 }

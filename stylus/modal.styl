@@ -9,23 +9,27 @@
 	width:100%
 	height:100%
 
-.{prefix}modal_headding
-	font-size:24px;
-	line-height:40px;
-	height:40px;
-	background-color:#333;
-	color:#FFF;
-
-.{prefix}modal_heading-primary
-	background-color:modalHeadingBgPrimaryColor
-
-
-
 .{prefix}modal_content
 	width:modalWidth
 	height:modalHeight
 	margin:50px auto
 	border-radius:3px
-	padding:10px
 	background-color:modalColor
 	word-wrap:break-word
+
+.{prefix}modal_heading
+	font-size:24px;
+	padding:10px
+	line-height:20px;
+	height:40px;
+	background-color:#333;
+	border-top-right-radius:3px;
+	border-top-left-radius:3px;
+	color:#FFF;
+
+.{prefix}modal-primary .{prefix}modal_heading
+	background-color:modalHeadingBgPrimaryColor
+	color:#FFF
+
+.{prefix}modal-body
+	padding:20px

@@ -18,7 +18,26 @@ $(function(){
 	});
 
 	/*マテリアルデザインを適応したいボタンに付与すると実行される*/
-	$('[data-type=cs-btn]').click(function(){
+	$('[data-type=btn]').click(function(){
 		$(this).addClass("active").delay(300).removeClass("active");
+	});
+	/*data-type=sortableなモジュールの中身をソートできる*/
+	$('[data-type=sortable]').attr("draggable",true)
+		.each(function(){
+
+		});
+	var $current;
+	$('[data-type=sortable]').on('dragover',function(e){
+		e.preventDefault();
+		return false;
+	}).on('drag',function(e){
+		$current = $(this);
+	}).on('drop',function(e){
+		$target = $(this);
+		//var $current = $(e.target);
+		order_o = $current.css('order'),
+		order_t = $target.css('order');
+		$current.css('order',order_t).animate({opacity:0},200).animate({opacity:1},200);
+		$target.css('order',order_o).animate({opacity:0},200).animate({opacity:1},200);
 	});
 });

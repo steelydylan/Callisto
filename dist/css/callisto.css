@@ -609,9 +609,10 @@ body {
   color: #fff;
 }
 .cs-card {
-  -webkit-box-shadow: rgba(0,0,0,0.239) 0px 3px 4px 0px;
+  -webkit-box-shadow: #333 0px 3px 4px 0px;
   background-color: #fff;
-  box-shadow: rgba(0,0,0,0.239) 0px 3px 4px 0px;
+  box-shadow: #333 0px 3px 4px 0px;
+  border: 1px solid #333;
   padding: 15px;
   margin-bottom: 5px;
 }
