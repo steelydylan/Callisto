@@ -546,7 +546,17 @@ body {
   width: 100%;
   height: 100%;
 }
-.cs-modal_contents {
+.cs-modal_headding {
+  font-size: 24px;
+  line-height: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+}
+.cs-modal_heading-primary {
+  background-color: #008cba;
+}
+.cs-modal_content {
   width: 500px;
   height: 500px;
   margin: 50px auto;
