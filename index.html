@@ -27,30 +27,33 @@
   		margin-bottom:30px;
   	}
   	#a{
-  		height:60px;
-  		line-height:40px;
+  		//line-height:40px;
   		background-color:#008CBA;
+  		border:1px solid #008CBA;
   		color:#FFFFFF;
   		padding:10px;
   	}
   	#b{
-   		height:60px;
-  		line-height:40px;
+  		//line-height:40px;
   		background-color:#FFFFFF;
+  		border:1px solid #008CBA;
   		padding:10px;
   	}
   	#c{
-  		height:60px;
-  		line-height:40px;
+  		//line-height:40px;
   		background-color:#008CBA;
+  		border:1px solid #008CBA;
   		color:#FFFFFF;
   		padding:10px;
   	}
   	#d{
-  		height:60px;
-  		line-height:40px;
+  		//line-height:40px;
   		background-color:#FFFFFF;
+  		border:1px solid #008CBA;
   		padding:10px;
+  	}
+  	.ex-section{
+  		margin-bottom:30px;
   	}
   </style>
   <body>
@@ -65,30 +68,47 @@
 		<p>Every design is materialized</p>
 	</div>
   	<div class="cs-container">
-  		<h2 class="cs-h1">1. Grid System</h2>
-	    <div class="cs-row">
-	    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-1 cs-col-xs-order-2">
-	    		<div id="a">
-	    			縮めると2番目に来ます
-	    		</div>
-	    	</div>
-	    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-2 cs-col-xs-order-1">
-	    		<div id="b">
-	    			縮めると1番目に来ます
-	    		</div>
-	    	</div>
-	    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-3 cs-col-xs-order-4">
-	    		<div id="c">
-	    			縮めると4番目に来ます
-	    		</div>
-	    	</div>
-	    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-4 cs-col-xs-order-3">
-	    		<div id="d">
-	    			縮めると3番目に来ます
-	    		</div>
-	    	</div>
-	    </div>
-    	<a class="cs-btn cs-btn-default" data-target="#target" data-toggle="showModal">クリック</a>
+  		<section class="ex-section">
+	  		<h1 class="cs-h1">1. Grid System</h1>
+		    <div class="cs-row">
+		    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-1 cs-col-xs-order-2">
+		    		<div id="a">
+		    			cs-col-xs-12 <br/>
+		    			cs-col-sm-3 <br/>
+		    			cs-col-sm-order-1 <br/>
+		    			cs-col-xs-order-2
+		    		</div>
+		    	</div>
+		    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-2 cs-col-xs-order-1">
+		    		<div id="b">
+		    			cs-col-xs-12 <br/>
+		    			cs-col-sm-3 <br/>
+		    			cs-col-sm-order-2 <br/>
+		    			cs-col-xs-order-1
+		    		</div>
+		    	</div>
+		    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-3 cs-col-xs-order-4">
+		    		<div id="c">
+		    			cs-col-xs-12 <br/>
+		    			cs-col-sm-3 <br/>
+		    			cs-col-sm-order-3 <br/>
+		    			cs-col-xs-order-4
+		    		</div>
+		    	</div>
+		    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-4 cs-col-xs-order-3">
+		    		<div id="d">
+		    			cs-col-xs-12 <br/>
+		    			cs-col-sm-3 <br/>
+		    			cs-col-sm-order-4 <br/>
+		    			cs-col-xs-order-3
+		    		</div>
+		    	</div>
+		    </div>
+		</section>
+		<section class="ex-section">
+		    <h1 class="cs-h1">2. Buttons</h1>
+	    	<a class="cs-btn cs-btn-default" data-target="#target" data-toggle="showModal">クリック</a>
+	    </section>
     </div>
   </body>
 </html>
