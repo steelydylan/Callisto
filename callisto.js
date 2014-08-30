@@ -27,7 +27,11 @@ $(function(){
 
 		});
 	var $current;
-	$('[data-type=sortable]').on('dragover',function(e){
+	var index = 0;
+	$('[data-type=sortable]').each(function(){
+		$(this).css("order",index);
+		index++;
+	}).on('dragover',function(e){
 		e.preventDefault();
 		return false;
 	}).on('drag',function(e){
