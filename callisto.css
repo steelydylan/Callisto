@@ -147,6 +147,15 @@ input,
 select {
   vertical-align: middle;
 }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url("http://themes.googleusercontent.com/static/fonts/opensans/v9/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff") format('woff');
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 * {
   box-sizing: border-box;
 }
@@ -182,8 +191,9 @@ select {
 .cs-h5 {
   font-size: 14px;
 }
-.container {
+.cs-container {
   max-width: 960px;
+  margin: 0 auto 0 auto;
 }
 .cs-row {
   display: -webkit-flex;
@@ -209,16 +219,19 @@ select {
   justify-content: space-between;
 }
 [class^="cs-col-"]{
-	padding-right:15px
-	padding-left:15px
+	padding:0 15px 0 15px
 }
 
 [class^="cs-col-"]:first-child{
-	padding-left:0
+	padding-left:0;
 }
 
-[class^="cs-col-"]:last-child {
-  padding-right: 0;
+[class^="cs-col-"]:last-child{
+	padding-right:0;
+}
+
+[class^="cs-col-"]:only-child {
+  padding: 0;
 }
 .cs-col-xs-1 {
   width: 8.333333333333334%;
