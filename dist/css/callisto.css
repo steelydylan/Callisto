@@ -632,6 +632,10 @@ body {
   padding: 15px;
   margin-bottom: 5px;
 }
+.cs-card-default {
+  background-color: #333;
+  color: #fff;
+}
 .cs-card-primary {
   background-color: #008cba;
   color: #fff;
@@ -648,4 +652,118 @@ body {
   background-color: #dc143c;
   color: #fff;
 }
-
+.cs-tab {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+.cs-tab_list {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  cursor: pointer;
+  height: 31px;
+  width: 300px;
+  line-height: 31px;
+  padding: 0px 21px;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.cs-tab_list-default {
+  background-color: tabsListDafaultBgColor;
+  color: tabsListDafaultColor;
+}
+.cs-tab_list-default:hover {
+  background-color: #ccc;
+  color: #333;
+}
+.cs-tab_list-danger {
+  background-color: tabsListDangerBgColor;
+  color: tabsListDangerColor;
+}
+.cs-tab_list-danger:hover {
+  background-color: #ccc;
+  color: #333;
+}
+.cs-tab_list-info {
+  background-color: tabsListInfoBgColor;
+  color: tabsListInfoColor;
+}
+.cs-tab_list-info:hover {
+  background-color: #ccc;
+  color: #333;
+}
+.cs-tab_list-primary {
+  background-color: tabsListPrimaryBgColor;
+  color: tabsListPrimaryColor;
+}
+.cs-tab_list-primary:hover {
+  background-color: #ccc;
+  color: #333;
+}
+.cs-tab_list-warning {
+  background-color: tabsListWarningBgColor;
+  color: tabsListWarningColor;
+}
+.cs-tab_list-warning:hover {
+  background-color: #ccc;
+  color: #333;
+}
+.cs-tab_list-success {
+  background-color: tabsListSuccessBgColor;
+  color: tabsListSuccessColor;
+}
+.cs-tab_list-success:hover {
+  background-color: #ccc;
+  color: #333;
+}
+.cs-tab .cs-tab_list.active {
+  display: block;
+}
+.cs-tab .cs-tab_list-default.active {
+  background-color: #eee;
+  color: #333;
+}
+.cs-tab .cs-tab_list-danger.active {
+  background-color: #eee;
+  color: #333;
+}
+.cs-tab .cs-tab_list-info.active {
+  background-color: #eee;
+  color: #333;
+}
+.cs-tab .cs-tab_list-primary.active {
+  background-color: #eee;
+  color: #333;
+}
+.cs-tab .cs-tab_list-waning.active {
+  background-color: #eee;
+  color: #333;
+}
+.cs-tab .cs-tab_list-success.active {
+  background-color: #eee;
+  color: #333;
+}
+.cs-tabContainer {
+  width: 300px;
+  background: #eee;
+  overflow: auto;
+}
+.cs-tabContainer_content {
+  padding: 20px;
+}
+.clearFix:before,
+.clearFix:after {
+  content: " ";
+  display: table;
+}
+.clearFix:after {
+  clear: both;
+}
+.clearFix {
+  *zoom: 1;
+}
