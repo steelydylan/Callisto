@@ -1,8 +1,9 @@
 .{prefix}tab
 	padding: 0
 	margin: 0
-	list-style-type:none;
+	list-style-type:none
 	position: relative
+	float: left
 
 .{prefix}tab_list
 	text-overflow: ellipsis
@@ -13,7 +14,8 @@
 	width: 300px
 	line-height: 31px
 	padding: 0px 21px
-	venderPrefix(border-radius, 3px 3px 0 0)
+	float: left
+	border-radius: 3px 3px 0 0
 
 .{prefix}tab_list-default
 	background-color: tabsListDafaultBgColor
@@ -93,19 +95,3 @@
 .{prefix}tabContainer_content
 	padding: 20px
 	//display: none
-
-
-//clearfix
-.clearFix:before,
-.clearFix:after {
-    content: " ";
-    display: table;
-}
-
-.clearFix:after {
-    clear: both;
-}
-
-.clearFix {
-    *zoom: 1;
-}

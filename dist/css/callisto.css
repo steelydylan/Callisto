@@ -657,6 +657,7 @@ body {
   margin: 0;
   list-style-type: none;
   position: relative;
+  float: left;
 }
 .cs-tab_list {
   text-overflow: ellipsis;
@@ -667,10 +668,7 @@ body {
   width: 300px;
   line-height: 31px;
   padding: 0px 21px;
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
-  -ms-border-radius: 3px 3px 0 0;
-  -o-border-radius: 3px 3px 0 0;
+  float: left;
   border-radius: 3px 3px 0 0;
 }
 .cs-tab_list-default {
@@ -755,15 +753,4 @@ body {
 }
 .cs-tabContainer_content {
   padding: 20px;
-}
-.clearFix:before,
-.clearFix:after {
-  content: " ";
-  display: table;
-}
-.clearFix:after {
-  clear: both;
-}
-.clearFix {
-  *zoom: 1;
 }
