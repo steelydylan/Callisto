@@ -7,7 +7,7 @@
     <meta http-equiv="expires" content="Sat, 31 Aug 2002 17:35:42 GMT">
     <meta http-equiv="x-ua-compatible" content="IE=10">
     <link rel="stylesheet" href="callisto.css"/>
-    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="./jquery-1.11.1.min.js"></script>
     <script src="callisto.js"></script>
   </head>
   <style>
@@ -31,11 +31,15 @@
   	.blank{
   		height:20px;
   	}
+  	.site-text-color{
+  		color:#666;
+  	}
   </style>
   <body>
   	<div class="cs-modal cs-modal-primary" id="target">
   		<div class="cs-modal_content">
 	  		<div class="cs-modal_heading">
+	  			<a class="cs-modal_dismiss" data-toggle="hideModal" data-target="#target">×</a>
 				cs-modal
 			</div>
 			<div class="cs-modal-body">
@@ -50,44 +54,106 @@
 	</div>
   	<div class="cs-container">
   		<section class="ex-section">
-	  		<h1 class="cs-h1">1. Grid System</h1>
-	  		<h2 class="cs-h2">1.1 Auto Ordered grid System</h2>
+	  		<h1 class="cs-h1 site-text-color">1. Grid System</h1>
+	  		<h2 class="cs-h2 site-text-color">1.1 Simple Grid System</h2>
+	  			<div class="cs-row">
+	  				<div class="cs-col-xs-1">
+	  					<div class="cs-card cs-card-primary">
+	  					1
+	  					</div>
+	  				</div>
+	  				<div class="cs-col-xs-11">
+	  					<div class="cs-card">
+	  					11
+	  					</div>
+	  				</div>
+	  			</div>
+	  			<div class="cs-row">
+	  				<div class="cs-col-xs-2">
+	  					<div class="cs-card cs-card-primary">
+	  					2
+	  					</div>
+	  				</div>
+	  				<div class="cs-col-xs-10">
+	  					<div class="cs-card">
+	  					10
+	  					</div>
+	  				</div>
+	  			</div>
+	  			<div class="cs-row">
+	  				<div class="cs-col-xs-3">
+	  					<div class="cs-card cs-card-primary">
+	  					3
+	  					</div>
+	  				</div>
+	  				<div class="cs-col-xs-9">
+	  					<div class="cs-card">
+	  					9
+	  					</div>
+	  				</div>
+	  			</div>
+	  			<div class="cs-row">
+	  				<div class="cs-col-xs-4">
+	  					<div class="cs-card cs-card-primary">
+	  					4
+	  					</div>
+	  				</div>
+	  				<div class="cs-col-xs-8">
+	  					<div class="cs-card">
+	  					8
+	  					</div>
+	  				</div>
+	  			</div>
+	  			<div class="cs-row">
+	  				<div class="cs-col-xs-5">
+	  					<div class="cs-card cs-card-primary">
+	  					5
+	  					</div>
+	  				</div>
+	  				<div class="cs-col-xs-7">
+	  					<div class="cs-card">
+	  					7
+	  					</div>
+	  				</div>
+	  			</div>
+	  			<div class="cs-row">
+	  				<div class="cs-col-xs-6">
+	  					<div class="cs-card cs-card-primary">
+	  					6
+	  					</div>
+	  				</div>
+	  				<div class="cs-col-xs-6">
+	  					<div class="cs-card">
+	  					6
+	  					</div>
+	  				</div>
+	  			</div>
+	  			<div class="blank"></div>
+	  		<h2 class="cs-h2 site-text-color">1.2 Auto Ordered Grid System</h2>
 		    <div class="cs-row">
 		    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-1 cs-col-xs-order-2">
 		    		<div class="cs-card cs-card-primary">
-		    			cs-col-xs-12 <br/>
-		    			cs-col-sm-3 <br/>
-		    			cs-col-sm-order-1 <br/>
-		    			cs-col-xs-order-2
+		    			2
 		    		</div>
 		    	</div>
 		    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-2 cs-col-xs-order-1">
 		    		<div class="cs-card">
-		    			cs-col-xs-12 <br/>
-		    			cs-col-sm-3 <br/>
-		    			cs-col-sm-order-2 <br/>
-		    			cs-col-xs-order-1
+		    			1
 		    		</div>
 		    	</div>
 		    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-3 cs-col-xs-order-4">
 		    		<div class="cs-card cs-card-primary">
-		    			cs-col-xs-12 <br/>
-		    			cs-col-sm-3 <br/>
-		    			cs-col-sm-order-3 <br/>
-		    			cs-col-xs-order-4
+		    			4
 		    		</div>
 		    	</div>
 		    	<div class="cs-col-xs-12 cs-col-sm-3 cs-col-sm-order-4 cs-col-xs-order-3">
 		    		<div class="cs-card">
-		    			cs-col-xs-12 <br/>
-		    			cs-col-sm-3 <br/>
-		    			cs-col-sm-order-4 <br/>
-		    			cs-col-xs-order-3
+		    			3
 		    		</div>
 		    	</div>
 		    </div>
 		    <div class="blank"></div>
-		    <h2 class="cs-h2">1.2 Sortable Grid System</h2>
+		    <h2 class="cs-h2 site-text-color">1.3 Sortable Grid System</h2>
 		    	<div class="cs-row">
 			    	<div class="cs-col-xs-12 cs-col-sm-3" data-type="sortable">
 			    		<div class="cs-card cs-card-primary">
@@ -109,11 +175,56 @@
 			    			4
 			    		</div>
 			    	</div>
+			    	<div class="cs-col-xs-12 cs-col-sm-3" data-type="sortable">
+			    		<div class="cs-card cs-card-primary">
+			    			5
+			    		</div>
+			    	</div>
+			    	<div class="cs-col-xs-12 cs-col-sm-3" data-type="sortable">
+			    		<div class="cs-card">
+			    			6
+			    		</div>
+			    	</div>
+			    	<div class="cs-col-xs-12 cs-col-sm-3" data-type="sortable">
+			    		<div class="cs-card cs-card-primary">
+			    			7
+			    		</div>
+			    	</div>
+			    	<div class="cs-col-xs-12 cs-col-sm-3" data-type="sortable">
+			    		<div class="cs-card">
+			    			8
+			    		</div>
+			    	</div>
 		    </div>
 		</section>
 		<section class="ex-section">
-		    <h1 class="cs-h1">2. Buttons</h1>
-	    	<a class="cs-btn cs-btn-default" data-target="#target" data-toggle="showModal">クリック</a>
+		    <h1 class="cs-h1 site-text-color">2. Buttons</h1>
+	    	<a class="cs-btn cs-btn-default">default</a>
+	    	<a class="cs-btn cs-btn-primary">primary</a>
+	    	<a class="cs-btn cs-btn-success">success</a>
+	    	<a class="cs-btn cs-btn-warning">warning</a>
+	    	<a class="cs-btn cs-btn-danger">danger</a>
+	    </section>
+	    <section class="ex-section">
+	    	<h1 class="cs-h1 site-text-color">3. Cards</h1>
+	    	<div class="cs-row">
+	    		<div class="cs-col-xs-12 cs-col-sm-3">
+	    			<div class="cs-card">
+	    			</div>
+	    		</div>
+	    		<div class="cs-col-xs-12 cs-col-sm-3">
+	    			<div class="cs-card cs-card-primary">
+	    			</div>
+	    		</div>
+	    		<div class="cs-col-xs-12 cs-col-sm-3">
+	    			<div class="cs-card cs-card-warning">
+	    			</div>
+	    		</div>
+	    		<div class="cs-col-xs-12 cs-col-sm-3">
+	    			<div class="cs-card cs-card-info">
+	    			</div>
+	    		</div>
+	    	</div>
 	    </section>
     </div>
   </body>

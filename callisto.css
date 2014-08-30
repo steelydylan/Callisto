@@ -153,9 +153,14 @@ select {
   font-weight: 400;
   src: local('Open Sans'), local('OpenSans'), url("http://themes.googleusercontent.com/static/fonts/opensans/v9/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff") format('woff');
 }
+html,
+body {
+  width: 100%;
+}
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #fff;
+  background-color: #eee;
+  overflow-x: hidden;
 }
 * {
   box-sizing: border-box;
@@ -204,6 +209,7 @@ body {
 }
 .cs-container {
   max-width: 960px;
+  padding: 10px;
   margin: 0 auto 0 auto;
 }
 .cs-well {
@@ -564,6 +570,11 @@ body {
   border-top-left-radius: 3px;
   color: #fff;
 }
+.cs-modal_dismiss {
+  float: right;
+  color: #fff;
+  cursor: pointer;
+}
 .cs-modal-primary .cs-modal_heading {
   background-color: #008cba;
   color: #fff;
@@ -595,7 +606,7 @@ body {
   color: #fff;
 }
 .cs-btn-warning {
-  background-color: #333;
+  background-color: #ff8c00;
   color: #fff;
 }
 .cs-btn-info {
@@ -611,7 +622,7 @@ body {
   color: #fff;
 }
 .cs-btn-primary {
-  background-color: #00f;
+  background-color: #008cba;
   color: #fff;
 }
 .cs-card {
@@ -623,6 +634,18 @@ body {
 }
 .cs-card-primary {
   background-color: #008cba;
+  color: #fff;
+}
+.cs-card-success {
+  background-color: #0f0;
+  color: #fff;
+}
+.cs-card-warning {
+  background-color: #ff8c00;
+  color: #fff;
+}
+.cs-card-danger {
+  background-color: #dc143c;
   color: #fff;
 }
 
