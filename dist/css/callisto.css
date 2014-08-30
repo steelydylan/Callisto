@@ -673,76 +673,76 @@ body {
 }
 .cs-tab_list-default {
   background-color: tabsListDafaultBgColor;
-  color: tabsListDafaultColor;
+  color: #fff;
 }
 .cs-tab_list-default:hover {
   background-color: #ccc;
   color: #333;
 }
 .cs-tab_list-danger {
-  background-color: tabsListDangerBgColor;
-  color: tabsListDangerColor;
+  background-color: #dc143c;
+  color: #fff;
 }
 .cs-tab_list-danger:hover {
   background-color: #ccc;
   color: #333;
 }
 .cs-tab_list-info {
-  background-color: tabsListInfoBgColor;
-  color: tabsListInfoColor;
+  background-color: #00ced1;
+  color: #fff;
 }
 .cs-tab_list-info:hover {
   background-color: #ccc;
   color: #333;
 }
 .cs-tab_list-primary {
-  background-color: tabsListPrimaryBgColor;
-  color: tabsListPrimaryColor;
+  background-color: #008cba;
+  color: #fff;
 }
 .cs-tab_list-primary:hover {
   background-color: #ccc;
   color: #333;
 }
 .cs-tab_list-warning {
-  background-color: tabsListWarningBgColor;
-  color: tabsListWarningColor;
+  background-color: #ff8c00;
+  color: #fff;
 }
 .cs-tab_list-warning:hover {
   background-color: #ccc;
   color: #333;
 }
 .cs-tab_list-success {
-  background-color: tabsListSuccessBgColor;
+  background-color: #0f0;
   color: tabsListSuccessColor;
 }
 .cs-tab_list-success:hover {
   background-color: #ccc;
   color: #333;
 }
-.cs-tab .cs-tab_list.active {
+.cs-tab_list.active {
   display: block;
 }
-.cs-tab .cs-tab_list-default.active {
+.cs-tab_list-default.active {
   background-color: #eee;
   color: #333;
 }
-.cs-tab .cs-tab_list-danger.active {
+.cs-tab_list-danger.active {
   background-color: #eee;
   color: #333;
 }
-.cs-tab .cs-tab_list-info.active {
+.cs-tab_list-info.active {
   background-color: #eee;
   color: #333;
 }
-.cs-tab .cs-tab_list-primary.active {
+.cs-tab_list-primary.active {
   background-color: #eee;
   color: #333;
 }
-.cs-tab .cs-tab_list-waning.active {
+.cs-tab_list-waning.active {
   background-color: #eee;
   color: #333;
 }
-.cs-tab .cs-tab_list-success.active {
+.cs-tab_list-success.active {
   background-color: #eee;
   color: #333;
 }
