@@ -93,3 +93,19 @@
 .{prefix}tabContainer_content
 	padding: 20px
 	//display: none
+
+
+//clearfix
+.clearFix:before,
+.clearFix:after {
+    content: " ";
+    display: table;
+}
+
+.clearFix:after {
+    clear: both;
+}
+
+.clearFix {
+    *zoom: 1;
+}
