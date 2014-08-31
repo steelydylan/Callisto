@@ -6,5 +6,5 @@ before_script:
   - grunt --version
 script: npm test
 notifications:
-  email: # メール通知先を記述
+  email:
     - github@pinemz.net
