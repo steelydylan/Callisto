@@ -20,3 +20,4 @@ module.exports = (grunt) ->
   require('load-grunt-tasks')(grunt)
 
   grunt.registerTask 'default', ['stylus:compile']
+  grunt.registerTask 'test', ['stylus:compile']
