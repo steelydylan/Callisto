@@ -831,11 +831,11 @@ body {
   -o-transition: none;
   -ms-transition: none;
   transition: none;
-  -webkit-transform: translateX(200%);
-  -moz-transform: translateX(200%);
-  -o-transform: translateX(200%);
-  -ms-transform: translateX(200%);
-  transform: translateX(200%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 .cs-modal_content.active {
   -webkit-transition: all 0.5s 0.1s;
@@ -916,7 +916,6 @@ body {
   color: #fff;
 }
 .cs-card {
-  -webkit-box-shadow: #ddd 0px 3px 4px 0px;
   background-color: #fff;
   -webkit-box-shadow: #ddd 0px 3px 4px 0px;
   box-shadow: #ddd 0px 3px 4px 0px;
@@ -949,100 +948,80 @@ body {
   list-style-type: none;
   position: relative;
 }
-.cs-tab_list {
+.cs-tab_item {
   margin-right: 10px;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow-x: hidden;
   cursor: pointer;
-  height: 31px;
+  height: 30px;
   width: 100px;
-  line-height: 31px;
-  padding: 0px 21px;
+  line-height: 30px;
+  padding: 0px 20px;
   float: left;
   -webkit-border-radius: 3px 3px 0 0;
   border-radius: 3px 3px 0 0;
 }
-.cs-tab_list-default {
-  background-color: tabsListDafaultBgColor;
+.cs-tab_item-default {
+  background-color: #333;
   color: #fff;
 }
-.cs-tab_list-default:hover {
-  background-color: #ccc;
-  color: #333;
+.cs-tab_item-default:hover,
+.cs-tab_item-default.active {
+  background-color: #5c5c5c;
+  color: #fff;
 }
-.cs-tab_list-danger {
+.cs-tab_item-danger {
   background-color: #dc143c;
   color: #fff;
 }
-.cs-tab_list-danger:hover {
-  background-color: #ccc;
-  color: #333;
+.cs-tab_item-danger:hover,
+.cs-tab_item-danger.active {
+  background-color: #ed395d;
+  color: #fff;
 }
-.cs-tab_list-info {
+.cs-tab_item-info {
   background-color: #00ced1;
   color: #fff;
 }
-.cs-tab_list-info:hover {
-  background-color: #ccc;
-  color: #333;
+.cs-tab_item-info:hover,
+.cs-tab_item-info.active {
+  background-color: #0efcff;
+  color: #fff;
 }
-.cs-tab_list-primary {
+.cs-tab_item-primary {
   background-color: #008cba;
   color: #fff;
 }
-.cs-tab_list-primary:hover {
-  background-color: #ccc;
-  color: #333;
+.cs-tab_item-primary:hover,
+.cs-tab_item-primary.active {
+  background-color: #00bdfb;
+  color: #fff;
 }
-.cs-tab_list-warning {
+.cs-tab_item-warning {
   background-color: #ff8c00;
   color: #fff;
 }
-.cs-tab_list-warning:hover {
-  background-color: #ccc;
-  color: #333;
+.cs-tab_item-warning:hover,
+.cs-tab_item-warning.active {
+  background-color: #ffa333;
+  color: #fff;
 }
-.cs-tab_list-success {
+.cs-tab_item-success {
   background-color: #0f0;
-  color: tabsListSuccessColor;
+  color: #fff;
 }
-.cs-tab_list-success:hover {
-  background-color: #ccc;
-  color: #333;
-}
-.cs-tab_list.active {
-  display: block;
-}
-.cs-tab_list-default.active {
-  background-color: #eee;
-  color: #333;
-}
-.cs-tab_list-danger.active {
-  background-color: #eee;
-  color: #333;
-}
-.cs-tab_list-info.active {
-  background-color: #eee;
-  color: #333;
-}
-.cs-tab_list-primary.active {
-  background-color: #eee;
-  color: #333;
-}
-.cs-tab_list-waning.active {
-  background-color: #eee;
-  color: #333;
-}
-.cs-tab_list-success.active {
-  background-color: #eee;
-  color: #333;
+.cs-tab_item-success:hover,
+.cs-tab_item-success.active {
+  background-color: #3f3;
+  color: #fff;
 }
 .cs-tabContainer {
-  width: 300px;
-  background: #eee;
-  overflow: auto;
+  background: #fff;
+  -webkit-box-shadow: #ddd 0px 3px 4px 0px;
+  box-shadow: #ddd 0px 3px 4px 0px;
+  color: #333;
 }
 .cs-tabContainer_content {
   padding: 20px;

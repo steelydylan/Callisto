@@ -4,94 +4,65 @@
 	list-style-type:none
 	position: relative
 
-.{prefix}tab_list
+.{prefix}tab_item
 	margin-right: 10px
 	text-overflow: ellipsis
 	white-space:nowrap
 	overflow-x:hidden
 	cursor: pointer
-	height: 31px
+	height: 30px
 	width: 100px
-	line-height: 31px
-	padding: 0px 21px
+	line-height: 30px
+	padding: 0px 20px
 	float: left
 	border-radius: 3px 3px 0 0
 
-.{prefix}tab_list-default
-	background-color: tabsListDafaultBgColor
+.{prefix}tab_item-default
+	background-color: tabListDafaultBgColor
 	color: tabListDafaultColor
-	&:hover
-		background-color: #ccc
-		color: #333
+	&:hover,&.active
+		background-color: lighten(tabListDafaultBgColor,20%)
+		color: #FFF
 
-.{prefix}tab_list-danger
+.{prefix}tab_item-danger
 	background-color: tabListDangerBgColor
 	color: tabListDangerColor
-	&:hover
-		background-color: #ccc
-		color: #333
+	&:hover,&.active
+		background-color: lighten(tabListDangerBgColor,20%)
+		color: #FFF
 
-.{prefix}tab_list-info
+.{prefix}tab_item-info
 	background-color: tabListInfoBgColor
 	color: tabListInfoColor
-	&:hover
-		background-color: #ccc
-		color: #333
+	&:hover,&.active
+		background-color: lighten(tabListInfoBgColor,20%)
+		color: #FFF
 
-.{prefix}tab_list-primary
+.{prefix}tab_item-primary
 	background-color: tabListPrimaryBgColor
 	color: tabListPrimaryColor
-	&:hover
-		background-color: #ccc
-		color: #333
+	&:hover,&.active
+		background-color: lighten(tabListPrimaryBgColor,20%)
+		color: #FFF
 
-.{prefix}tab_list-warning
+.{prefix}tab_item-warning
 	background-color: tabListWarningBgColor
 	color: tabListWarningColor
-	&:hover
-		background-color: #ccc
-		color: #333
+	&:hover,&.active
+		background-color: lighten(tabListWarningBgColor,20%)
+		color: #FFF
 
-.{prefix}tab_list-success
+.{prefix}tab_item-success
 	background-color: tabListSuccessBgColor
-	color: tabsListSuccessColor
-	&:hover
-		background-color: #ccc
-		color: #333
-
-.{prefix}tab_list.active
-	//border-bottom: 1px solid #fff
-	display: block
-
-.{prefix}tab_list-default.active
-	background-color: #eee
-	color: #333
-
-.{prefix}tab_list-danger.active
-	background-color: #eee
-	color: #333
-
-.{prefix}tab_list-info.active
-	background-color: #eee
-	color: #333
-
-.{prefix}tab_list-primary.active
-	background-color: #eee
-	color: #333
-
-.{prefix}tab_list-waning.active
-	background-color: #eee
-	color: #333
-
-.{prefix}tab_list-success.active
-	background-color: #eee
-	color: #333
+	color: tabListSuccessColor
+	&:hover,&.active
+		background-color: lighten(tabListSuccessBgColor,20%)
+		color: #FFF
 
 .{prefix}tabContainer
-	width: 300px
-	background: #eee;
-	overflow: auto;
+	background: #FFF;
+	box-shadow: #DDD 0px 3px 4px 0px
+	color:#333
 
 .{prefix}tabContainer_content
 	padding: 20px
-	//display: none
