@@ -19,45 +19,45 @@
 	border-radius: 3px 3px 0 0
 
 .{prefix}tab_item-default
-	background-color: tabListDafaultBgColor
-	color: tabListDafaultColor
+	background-color: darken(tabItemDafaultBgColor,20%)
+	color: #FFF
 	&:hover,&.active
-		background-color: lighten(tabListDafaultBgColor,20%)
+		background-color: tabItemDafaultBgColor
 		color: #FFF
 
 .{prefix}tab_item-danger
-	background-color: tabListDangerBgColor
-	color: tabListDangerColor
+	background-color: darken(tabItemDangerBgColor,20%)
+	color: #FFF
 	&:hover,&.active
-		background-color: lighten(tabListDangerBgColor,20%)
+		background-color: tabItemDangerColor
 		color: #FFF
 
 .{prefix}tab_item-info
-	background-color: tabListInfoBgColor
-	color: tabListInfoColor
+	background-color: darken(tabItemInfoBgColor,20%)
+	color: #FFF
 	&:hover,&.active
-		background-color: lighten(tabListInfoBgColor,20%)
+		background-color: tabItemInfoColor
 		color: #FFF
 
 .{prefix}tab_item-primary
-	background-color: tabListPrimaryBgColor
-	color: tabListPrimaryColor
+	background-color: darken(tabItemPrimaryBgColor,20%)
+	color: #FFF
 	&:hover,&.active
-		background-color: lighten(tabListPrimaryBgColor,20%)
+		background-color: tabItemPrimaryBgColor
 		color: #FFF
 
 .{prefix}tab_item-warning
-	background-color: tabListWarningBgColor
-	color: tabListWarningColor
+	background-color: darken(tabItemWarningBgColor,20%)
+	color: #FFF
 	&:hover,&.active
-		background-color: lighten(tabListWarningBgColor,20%)
+		background-color: tabItemWarningColor
 		color: #FFF
 
 .{prefix}tab_item-success
-	background-color: tabListSuccessBgColor
-	color: tabListSuccessColor
+	background-color: darken(tabItemSuccessBgColor,20%)
+	color: #FFF
 	&:hover,&.active
-		background-color: lighten(tabListSuccessBgColor,20%)
+		background-color: tabItemSuccessColor
 		color: #FFF
 
 .{prefix}tabContainer
@@ -65,6 +65,18 @@
 	display:none;
 	box-shadow: #DDD 0px 3px 4px 0px
 	color:#333
+
+.{prefix}tabContainer-default
+	border-top:5px solid tabContainerDefaultBgColor
+
+.{prefix}tabContainer-primary
+	border-top:5px solid tabContainerPrimaryBgColor
+
+.{prefix}tabContainer-danger
+	border-top:5px solid tabContainerDangerBgColor
+
+.{prefix}tabContainer-warning
+	border-top:5px solid tabContainerWarningBgColor
 
 .{prefix}tabContainer.active
 	display:block;

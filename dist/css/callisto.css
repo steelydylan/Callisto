@@ -957,57 +957,57 @@ body {
   border-radius: 3px 3px 0 0;
 }
 .cs-tab_item-default {
-  background-color: #333;
+  background-color: #292929;
   color: #fff;
 }
 .cs-tab_item-default:hover,
 .cs-tab_item-default.active {
-  background-color: #5c5c5c;
+  background-color: #333;
   color: #fff;
 }
 .cs-tab_item-danger {
-  background-color: #dc143c;
+  background-color: #b01030;
   color: #fff;
 }
 .cs-tab_item-danger:hover,
 .cs-tab_item-danger.active {
-  background-color: #ed395d;
+  background-color: #fff;
   color: #fff;
 }
 .cs-tab_item-info {
-  background-color: #00ced1;
+  background-color: #00a5a7;
   color: #fff;
 }
 .cs-tab_item-info:hover,
 .cs-tab_item-info.active {
-  background-color: #0efcff;
+  background-color: #fff;
   color: #fff;
 }
 .cs-tab_item-primary {
-  background-color: #008cba;
+  background-color: #007095;
   color: #fff;
 }
 .cs-tab_item-primary:hover,
 .cs-tab_item-primary.active {
-  background-color: #00bdfb;
+  background-color: #008cba;
   color: #fff;
 }
 .cs-tab_item-warning {
-  background-color: #ff8c00;
+  background-color: #cc7000;
   color: #fff;
 }
 .cs-tab_item-warning:hover,
 .cs-tab_item-warning.active {
-  background-color: #ffa333;
+  background-color: #fff;
   color: #fff;
 }
 .cs-tab_item-success {
-  background-color: #0f0;
+  background-color: #0c0;
   color: #fff;
 }
 .cs-tab_item-success:hover,
 .cs-tab_item-success.active {
-  background-color: #3f3;
+  background-color: #fff;
   color: #fff;
 }
 .cs-tabContainer {
@@ -1016,6 +1016,18 @@ body {
   -webkit-box-shadow: #ddd 0px 3px 4px 0px;
   box-shadow: #ddd 0px 3px 4px 0px;
   color: #333;
+}
+.cs-tabContainer-default {
+  border-top: 5px solid #333;
+}
+.cs-tabContainer-primary {
+  border-top: 5px solid #008cba;
+}
+.cs-tabContainer-danger {
+  border-top: 5px solid #dc143c;
+}
+.cs-tabContainer-warning {
+  border-top: 5px solid #ff8c00;
 }
 .cs-tabContainer.active {
   display: block;
