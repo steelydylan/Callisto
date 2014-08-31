@@ -236,13 +236,19 @@
 	    </section>
         <section class="ex-section">
         	<h1 class="cs-h1 site-text-color">5. Tab</h1>
-            <ul class="cs-tab clearfix">
-                <li class="cs-tab_item cs-tab_item-primary">タブ1</li>
-                <li class="cs-tab_item cs-tab_item-primary">タブ2</li>
+            <ul class="cs-tab">
+                <li class="cs-tab_item cs-tab_item-primary active" data-toggle="showTab" data-target="#content1">タブ1</li>
+                <li class="cs-tab_item cs-tab_item-primary" data-toggle="showTab" data-target="#content2">タブ2</li>
             </ul>
-            <div class="cs-tabContainer">
-                <div class="cs-tabContainer_content">コンテンツ1</div>
-                <div class="cs-tabContainer_content">コンテンツ2</div>
+            <div class="cs-tabContainer active" id="content1">
+                <div class="cs-tabContainer_content">
+                	コンテンツ1
+                </div>
+            </div>
+            <div class="cs-tabContainer" id="content2">
+                <div class="cs-tabContainer_content">
+                	コンテンツ2
+                </div>
             </div>
         </section>
     </div>

@@ -18,18 +18,21 @@ $(function(){
 		var target = $(this).data("target");
 		$(target).hideModal();
 	});
+	/*タブの切り替え*/
+	$('[data-toggle=showTab').click(function(){
+		$(this).addClass("active");
+		$(this).siblings('.cs-tab_item').removeClass('active');
+		var target = $(this).data("target");
+		$(target).siblings('.cs-tabContainer').removeClass('active');
+		$(target).addClass("active");
+	});
 	/*マテリアルデザインを適応したいボタンに付与すると実行される*/
 	$('[data-type=btn]').click(function(){
 		$(this).addClass("active").delay(300).removeClass("active");
 	});
-	/*data-type=sortableなモジュールの中身をソートできる*/
-	$('[data-type=sortable]').attr("draggable",true)
-		.each(function(){
-
-		});
 	var $current;
 	var index = 0;
-	$('[data-type=sortable]').each(function(){
+	$('[data-type=sortable]').attr("draggable",true).each(function(){
 		$(this).css("order",index);
 		index++;
 	}).on('dragover',function(e){
