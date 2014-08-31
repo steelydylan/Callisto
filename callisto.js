@@ -42,7 +42,6 @@ $(function(){
 		$current = $(this);
 	}).on('drop',function(e){
 		$target = $(this);
-		//var $current = $(e.target);
 		order_o = $current.css('order'),
 		order_t = $target.css('order');
 		$current.css('order',order_t).animate({opacity:0},200).animate({opacity:1},200);
