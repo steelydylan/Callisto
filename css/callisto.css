@@ -947,6 +947,15 @@ body {
   margin: 0;
   list-style-type: none;
   position: relative;
+  zoom: 1;
+}
+.cs-tab:before,
+.cs-tab:after {
+  content: "";
+  display: table;
+}
+.cs-tab:after {
+  clear: both;
 }
 .cs-tab_item {
   margin-right: 10px;
@@ -1019,9 +1028,13 @@ body {
 }
 .cs-tabContainer {
   background: #fff;
+  display: none;
   -webkit-box-shadow: #ddd 0px 3px 4px 0px;
   box-shadow: #ddd 0px 3px 4px 0px;
   color: #333;
+}
+.cs-tabContainer.active {
+  display: block;
 }
 .cs-tabContainer_content {
   padding: 20px;
