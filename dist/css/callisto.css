@@ -200,10 +200,6 @@ body {
 .cs-well {
   padding: 10px;
   -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   background-color: #f5f5f5;
 }
@@ -213,16 +209,20 @@ body {
 .cs-float-right {
   float: right !important;
 }
-.clearfix {
+.cs-clearfix {
   zoom: 1;
 }
-.clearfix:before,
-.clearfix:after {
+.cs-clearfix:before,
+.cs-clearfix:after {
   content: "";
   display: table;
 }
-.clearfix:after {
+.cs-clearfix:after {
   clear: both;
+}
+.cs-flexibleImage {
+  max-width: 100%;
+  height: auto;
 }
 .cs-row {
   display: -webkit-flex;
@@ -236,31 +236,19 @@ body {
   display: box;
   display: flex;
   margin: 0 -15px 0 -15px;
-  overflow-x: hidden;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  -o-flex-direction: row;
+  overflow: hidden;
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
   -o-box-orient: horizontal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
   -webkit-box-lines: multiple;
   -moz-box-lines: multiple;
   -o-box-lines: multiple;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -o-justify-content: space-between;
   -webkit-box-pack: justify;
   -moz-box-pack: justify;
   -o-box-pack: justify;
@@ -884,10 +872,6 @@ body {
   text-align: center;
   display: inline-block;
   cursor: pointer;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
