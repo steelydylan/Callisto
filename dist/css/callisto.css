@@ -826,11 +826,11 @@ body {
   border-radius: 3px;
   background-color: #eaeaea;
   word-wrap: break-word;
-  -webkit-transition: all 0.5s 0.1s;
-  -moz-transition: all 0.5s 0.1s;
-  -o-transition: all 0.5s 0.1s;
-  -ms-transition: all 0.5s 0.1s;
-  transition: all 0.5s 0.1s;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
   -webkit-transform: translateX(200%);
   -moz-transform: translateX(200%);
   -o-transform: translateX(200%);
@@ -838,16 +838,16 @@ body {
   transform: translateX(200%);
 }
 .cs-modal_content.active {
-  -webkit-transform: translateX(0%);
-  -moz-transform: translateX(0%);
-  -o-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-  transform: translateX(0%);
   -webkit-transition: all 0.5s 0.1s;
   -moz-transition: all 0.5s 0.1s;
   -o-transition: all 0.5s 0.1s;
   -ms-transition: all 0.5s 0.1s;
   transition: all 0.5s 0.1s;
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
 }
 .cs-modal_heading {
   font-size: 24px;

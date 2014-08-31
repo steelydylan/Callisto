@@ -5,8 +5,8 @@ $.fn.extend({
 		$(this).find(".cs-modal_content").addClass("active");
 	},
 	hideModal:function(){
-		$(this).find(".cs-modal_content").removeClass("active");
 		$(this).removeClass("active");
+		$(this).find(".cs-modal_content").removeClass("active");
 	},
 });
 $(function(){
@@ -18,7 +18,6 @@ $(function(){
 		var target = $(this).data("target");
 		$(target).hideModal();
 	});
-
 	/*マテリアルデザインを適応したいボタンに付与すると実行される*/
 	$('[data-type=btn]').click(function(){
 		$(this).addClass("active").delay(300).removeClass("active");
