@@ -1,10 +1,12 @@
 $.fn.extend({
 	/*のちのちにもう少しアニメーションをかける予定*/
 	showModal:function(){
-		$(this).show("fast");
+		$(this).addClass("active");
+		$(this).find(".cs-modal_content").addClass("active");
 	},
 	hideModal:function(){
-		$(this).hide("fast");
+		$(this).find(".cs-modal_content").removeClass("active");
+		$(this).removeClass("active");
 	},
 });
 $(function(){
