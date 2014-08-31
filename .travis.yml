@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - 0.10
+before_script:
+  - npm install -g grunt-cli
+  - grunt --version
+script: npm test
+notifications:
+  email: # メール通知先を記述
+    - github@pinemz.net
