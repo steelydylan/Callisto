@@ -19,7 +19,7 @@ $(function(){
 		$(target).hideModal();
 	});
 	/*タブの切り替え*/
-	$('[data-toggle=showTab').click(function(){
+	$('[data-toggle="showTab"]').click(function(){
 		$(this).addClass("active");
 		$(this).siblings('.cs-tab_item').removeClass('active');
 		var target = $(this).data("target");
