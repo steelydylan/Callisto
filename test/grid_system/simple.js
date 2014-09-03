@@ -41,7 +41,7 @@ $(function() {
         var percentage      = elemWidth / elemParentWidth * 100;
         
         it(className + ' width is ' + (Math.floor(validWidth * 10) / 10) + '%', function() {
-          expect(equalsWidth(size, percentage)).to.be.true;
+          expect(equalsWidth(validWidth, percentage)).to.be.true;
         });
       }
     });

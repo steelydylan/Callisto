@@ -1,6 +1,6 @@
 var Test = (function() {
   var init = function() {
-    window.except = chai.except;
+    window.expect = chai.expect;
     mocha.setup('bdd');
   };
   
