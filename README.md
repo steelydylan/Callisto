@@ -26,4 +26,14 @@ Callisto/
 ├── stylus/
 │   └── *.styl
 ```
+
+### How to test
+You must install the [Grunt](http://gruntjs.com), [Bower](http://bower.io), [PhantomJS](http://phantomjs.org) to the test.
+
+```
+$ npm install
+$ bower install
+$ grunt test
+```
+
 <!-- 頑張って英語で書いた -->
