@@ -1,0 +1,23 @@
+{
+  "name": "Callisto",
+  "main": "Callisto.js",
+  "version": "0.0.0",
+  "homepage": "http://steelydylan.github.io/Callisto/",
+  "authors": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "expect": "~0.3.1",
+    "jquery": "~2.1.1",
+    "chai-jquery": "~1.2.2",
+    "mocha": "~1.21.4",
+    "lodash": "~2.4.1"
+  }
+}
