@@ -27,7 +27,7 @@ Test.init();
 makeWidthTable();
 
 $(function() {
-  describe('Symple Grid System', function() {
+  describe('Simple Grid System', function() {
     _.each($('[class^="cs-col-"]'), function(elem_) {
       var elem      = $(elem_);
       var className = elem.prop('className');
