@@ -944,7 +944,7 @@ a {
   background-color: #fff;
   -webkit-box-shadow: #ddd 0px 3px 4px 0px;
   box-shadow: #ddd 0px 3px 4px 0px;
-  padding: 15px;
+  padding: 20px;
   margin-bottom: 5px;
 }
 .cs-card-default {
@@ -1089,6 +1089,8 @@ a {
   -webkit-border-radius: 0;
   border-radius: 0;
   border: 1px solid #ddd;
+  -webkit-box-shadow: #ddd 0px 3px 4px 0px;
+  box-shadow: #ddd 0px 3px 4px 0px;
   color: #008cba;
   width: 60px;
   height: 30px;
@@ -1128,4 +1130,55 @@ a {
 }
 .cs-header_nav_item.active a {
   color: #fff;
+}
+.cs-ribbon:before {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-width: 0 15px 15px 0;
+  border-style: solid;
+  border-color: transparent;
+  border-right-color: #007095;
+}
+.cs-ribbon {
+  position: relative;
+  background-color: #008cba;
+  color: #fff;
+  margin-left: -35px;
+  padding: 0 10px 0 35px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  width: auto;
+}
+.cs-ribbon a {
+  color: #fff;
+}
+.cs-table {
+  border: 1px solid #ccc;
+}
+.cs-table {
+  -webkit-box-shadow: #ddd 0px 3px 4px 0px;
+  box-shadow: #ddd 0px 3px 4px 0px;
+}
+.cs-table td,
+.cs-table th {
+  padding: 10px;
+  text-align: left;
+}
+.cs-table th {
+  background-color: #008cba;
+  color: #fff;
+}
+.cs-table td {
+  color: #008cba;
+}
+.cs-table-full {
+  width: 100%;
+}
+.cs-table-noWrapTh th {
+  text-wrapping: nowrap;
 }
