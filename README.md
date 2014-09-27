@@ -37,6 +37,4 @@ $ grunt test
 ```
 
 <!-- 頑張って英語で書いた -->
-<!-- test -->
-<!-- test1 -->
-<!-- test1 -->
+<!-- this is a test comment -->
