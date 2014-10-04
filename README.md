@@ -2,8 +2,8 @@ Callisto
 ========
 [![Build Status](https://api.travis-ci.org/steelydylan/Callisto.svg?branch=master)](https://travis-ci.org/steelydylan/Callisto)
 
-The cutting edge front-end framework for developing on the web.
-[callisto](http://steelydylan.github.io/Callisto/)
+[callisto](http://steelydylan.github.io/Callisto/) is the cutting edge front-end framework for developing on the web.
+
 
 
 Quick start
