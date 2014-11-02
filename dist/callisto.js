@@ -47,4 +47,37 @@ $(function(){
 		$current.css('order',order_t).animate({opacity:0},200).animate({opacity:1},200);
 		$target.css('order',order_o).animate({opacity:0},200).animate({opacity:1},200);
 	});
+	$("body").addClass("cs-offcanvasBody");
+	$(".cs-right-open-btn").click(function(){
+		var $target = $($(this).attr("href"));
+		$(".cs-offcanvasBody").addClass("active");
+		$target.addClass("active");
+		setTimeout(function(){
+			$target.find(".cs-offcanvas-sidebar").addClass("active");
+		},0);
+	});
+	$(".cs-offcanvas").click(function(e){
+		if(!$(e.target).hasClass("cs-offcanvas-sidebar") && $(e.target).parent("cs-offcanvas-sidebar").length == 0){
+				$(".cs-offcanvas-sidebar").removeClass("active");
+				$(".cs-offcanvasBody").removeClass("active");
+			setTimeout(function(){
+				$(".cs-offcanvas").removeClass("active");
+			},300);
+		}
+	});
+	$(".cs-toggleMenu_expandable").click(function(e){
+		if($(e.target).hasClass("cs-toggleMenu_expandable")){
+			var $that = $(this);
+			var $ul = $that.find("ul");
+			if(!$that.hasClass("active")){
+				$that.addClass("active");
+				$ul.slideToggle();
+			}else{
+				$ul.slideToggle(function(){
+					$that.removeClass('active');
+				})
+			}
+		}
+	});
 });
+

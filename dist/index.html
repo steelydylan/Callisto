@@ -47,8 +47,52 @@
   	.footer_social a{
   		color:#FFFFFF;
   	}
+  	.cs-offcanvasBody{
+		-webkit-transition: margin-left 0.3s ease-in-out;
+        transition: margin-left 0.3s ease-in-out;
+  	}
+  	.cs-offcanvasBody.active{
+  		margin-left:-270px;
+  	}
+  	.cs-offcanvas{
+  		display:none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1000;
+		width:100%;
+		height:100%;
+		background: rgba(0, 0, 0, 0.1);
+  	}
+  	.cs-offcanvas.active{
+  		display:block;
+  	}
+  	.cs-offcanvas-sidebar{
+  		width:270px;
+  		z-index:1001;
+  		position:fixed;
+  		top:0;
+  		bottom:0;
+  		/*left: auto;*/
+		right: 0;
+  		max-width: 100%;
+  		background:#333333;
+  		transform: translateX(270px);
+  		transition:transform 0.3s ease-in-out;
+  	}
+  	.cs-offcanvas-sidebar.active{
+  		transform: translateX(0px);
+  		transition:transform 0.3s ease-in-out;
+  	}
   </style>
   <body>
+  	<div class="cs-offcanvas" id="target">
+  		<div class="cs-offcanvas-sidebar">
+
+  		</div>
+  	</div>
   	<div class="cs-modal cs-modal-primary" id="target">
   		<div class="cs-modal_content">
 	  		<div class="cs-modal_heading">
@@ -324,6 +368,22 @@
 	        		<td>@Atlasjs</td>
 	        	</tr>
         	</table>
+        </section>
+        <section class="ex-section">
+        	<h1 class="cs-h1 site-text-color">8. Offcanvas</h1>
+        	<a href="#target" class="cs-btn cs-btn-primary cs-right-open-btn">ナビゲーションを開閉</a>
+        </section>
+        <section class="ex-section">
+        	<h1 class="cs-h1 site-text-color">9. Toggle Menu</h1>
+        	<ul class="cs-toggleMenu">
+        		<li>Menu 1</li>
+        		<li class="cs-toggleMenu_expandable">Menu 2
+        			<ul>
+        				<li>Sub Menu1</li>
+        				<li>Sub Menu2</li>
+        			</ul>
+        		</li>
+        	</ul>
         </section>
     </div>
     <footer class="footer">

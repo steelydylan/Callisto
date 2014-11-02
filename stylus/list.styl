@@ -1,0 +1,51 @@
+.{prefix}toggleMenu
+    padding-left  0
+    color toggleMenuColor
+    box-shadow  #ddd 0px 3px 4px 0px
+
+.{prefix}toggleMenu li
+    padding 10px
+    cursor pointer
+    list-style-type  none
+    display  block
+    background-color  toggleMenuBgColor
+    border-bottom  1px solid #FFFFFF
+
+.{prefix}toggleMenu li:last-child
+    border-bottom  none
+
+.{prefix}toggleMenu .{prefix}toggleMenu_expandable.active
+    padding-bottom  0
+
+.{prefix}toggleMenu_expandable > ul
+    padding-left 0
+    display none
+    margin-right -10px
+    margin-left  -10px
+
+.{prefix}toggleMenu_expandable
+    position relative
+
+
+.{prefix}toggleMenu_expandable:after
+    content ""
+    position absolute
+    top 15px
+    right 10px
+    float right
+    display block
+    width  0
+    height  0
+    border-style  solid
+    border-width  5px 0 5px 8px
+    border-color  transparent transparent transparent #ffffff
+
+.{prefix}toggleMenu_expandable.active:after
+    border-width  8px 5px 0 5px
+    border-color  #ffffff transparent transparent transparent
+
+.{prefix}toggleMenu_expandable.active > ul
+    margin-top 10px !important
+
+.{prefix}toggleMenu_expandable li
+    background-color  toggleMenuExpandableBgColor
