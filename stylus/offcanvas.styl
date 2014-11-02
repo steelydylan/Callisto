@@ -1,0 +1,50 @@
+.{prefix}offcanvasBody
+    -webkit-transition margin-left 0.3s ease-in-out
+    transition margin-left 0.3s ease-in-out
+
+.{prefix}offcanvasBody.rightActive
+	margin-left -(offcanvasWidth)
+
+.{prefix}offcanvasBody.leftActive
+    margin-left offcanvasWidth
+
+.{prefix}offcanvas
+    display none
+    position fixed
+    top 0
+    right 0
+    bottom 0
+    left 0
+    z-index 1000
+    width 100%
+    height 100%
+    background rgba(0, 0, 0, 0.1)
+
+.{prefix}offcanvas.active
+	display block
+
+.{prefix}offcanvas-sidebar,
+.{prefix}offcanvas-sidebar
+    width offcanvasWidth
+    z-index 1001
+    position fixed
+    top 0
+    bottom 0
+    max-width 100%
+    background offcanvasSidebarBgColor
+
+.{prefix}offcanvas-sidebar.active.rightActive,
+.{prefix}offcanvas-sidebar.active.leftActive
+    transform translateX(0px)
+    transition transform 0.3s ease-in-out
+
+.{prefix}offcanvas-sidebar.rightActive
+    right 0
+    transform translateX(offcanvasWidth)
+    transition transform 0.3s ease-in-out
+
+.{prefix}offcanvas-sidebar.leftActive
+    left 0
+    transform translateX(-(offcanvasWidth))
+    transition transform 0.3s ease-in-out
+    
