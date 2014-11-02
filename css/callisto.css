@@ -1181,6 +1181,83 @@ a {
 .cs-table-noWrapTh th {
   text-wrapping: nowrap;
 }
+.cs-offcanvasBody {
+  -webkit-transition: margin-left 0.3s ease-in-out;
+  -webkit-transition: margin-left 0.3s ease-in-out;
+  -moz-transition: margin-left 0.3s ease-in-out;
+  -o-transition: margin-left 0.3s ease-in-out;
+  -ms-transition: margin-left 0.3s ease-in-out;
+  transition: margin-left 0.3s ease-in-out;
+}
+.cs-offcanvasBody.rightActive {
+  margin-left: -270px;
+}
+.cs-offcanvasBody.leftActive {
+  margin-left: 270px;
+}
+.cs-offcanvas {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.1);
+}
+.cs-offcanvas.active {
+  display: block;
+}
+.cs-offcanvas-sidebar {
+  width: 270px;
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  max-width: 100%;
+  background: #333;
+}
+.cs-offcanvas-sidebar.active.rightActive,
+.cs-offcanvas-sidebar.active.leftActive {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  -moz-transition: -moz-transform 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out;
+  -ms-transition: -ms-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+.cs-offcanvas-sidebar.rightActive {
+  right: 0;
+  -webkit-transform: translateX(270px);
+  -moz-transform: translateX(270px);
+  -o-transform: translateX(270px);
+  -ms-transform: translateX(270px);
+  transform: translateX(270px);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  -moz-transition: -moz-transform 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out;
+  -ms-transition: -ms-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+.cs-offcanvas-sidebar.leftActive {
+  left: 0;
+  -webkit-transform: translateX(-270px);
+  -moz-transform: translateX(-270px);
+  -o-transform: translateX(-270px);
+  -ms-transform: translateX(-270px);
+  transform: translateX(-270px);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  -moz-transition: -moz-transform 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out;
+  -ms-transition: -ms-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
 .cs-toggleMenu {
   padding-left: 0;
   color: #fff;
