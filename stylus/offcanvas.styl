@@ -3,9 +3,11 @@
     transition margin-left 0.3s ease-in-out
 
 .{prefix}offcanvasBody.rightActive
-	margin-left -(offcanvasWidth)
+    overflow-y hidden
+    margin-left -(offcanvasWidth)
 
 .{prefix}offcanvasBody.leftActive
+    overflow-y hidden
     margin-left offcanvasWidth
 
 .{prefix}offcanvas
@@ -31,10 +33,14 @@
     top 0
     bottom 0
     max-width 100%
+    color offcanvasSidebarColor
     background offcanvasSidebarBgColor
+    padding-right offcanvasSidebarPadding
+    padding-left offcanvasSidebarPadding
 
 .{prefix}offcanvas-sidebar.active.rightActive,
 .{prefix}offcanvas-sidebar.active.leftActive
+    oveflow-y scroll
     transform translateX(0px)
     transition transform 0.3s ease-in-out
 
