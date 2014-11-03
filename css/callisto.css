@@ -1190,9 +1190,11 @@ a {
   transition: margin-left 0.3s ease-in-out;
 }
 .cs-offcanvasBody.rightActive {
+  overflow-y: hidden;
   margin-left: -270px;
 }
 .cs-offcanvasBody.leftActive {
+  overflow-y: hidden;
   margin-left: 270px;
 }
 .cs-offcanvas {
@@ -1217,10 +1219,14 @@ a {
   top: 0;
   bottom: 0;
   max-width: 100%;
+  color: #fff;
   background: #333;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .cs-offcanvas-sidebar.active.rightActive,
 .cs-offcanvas-sidebar.active.leftActive {
+  overflow-y: scroll;
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
   -o-transform: translateX(0px);
