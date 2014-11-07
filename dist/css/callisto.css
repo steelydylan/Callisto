@@ -1107,6 +1107,7 @@ a {
   background-color: #fff;
   margin-bottom: 10px;
 }
+transition margin-left 0.3s ease-in-out,
 .cs-header_nav {
   height: 50px;
   padding: 0;
@@ -1191,11 +1192,11 @@ a {
 }
 .cs-offcanvasBody.rightActive {
   overflow-y: hidden;
-  margin-left: -270px;
+  margin-left: -210px;
 }
 .cs-offcanvasBody.leftActive {
   overflow-y: hidden;
-  margin-left: 270px;
+  margin-left: 210px;
 }
 .cs-offcanvas {
   display: none;
@@ -1213,7 +1214,7 @@ a {
   display: block;
 }
 .cs-offcanvas-sidebar {
-  width: 270px;
+  width: 210px;
   z-index: 1001;
   position: fixed;
   top: 0;
@@ -1226,7 +1227,7 @@ a {
 }
 .cs-offcanvas-sidebar.active.rightActive,
 .cs-offcanvas-sidebar.active.leftActive {
-  overflow-y: scroll;
+  oveflow-y: scroll;
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
   -o-transform: translateX(0px);
@@ -1240,11 +1241,11 @@ a {
 }
 .cs-offcanvas-sidebar.rightActive {
   right: 0;
-  -webkit-transform: translateX(270px);
-  -moz-transform: translateX(270px);
-  -o-transform: translateX(270px);
-  -ms-transform: translateX(270px);
-  transform: translateX(270px);
+  -webkit-transform: translateX(210px);
+  -moz-transform: translateX(210px);
+  -o-transform: translateX(210px);
+  -ms-transform: translateX(210px);
+  transform: translateX(210px);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   -moz-transition: -moz-transform 0.3s ease-in-out;
   -o-transition: -o-transform 0.3s ease-in-out;
@@ -1253,16 +1254,22 @@ a {
 }
 .cs-offcanvas-sidebar.leftActive {
   left: 0;
-  -webkit-transform: translateX(-270px);
-  -moz-transform: translateX(-270px);
-  -o-transform: translateX(-270px);
-  -ms-transform: translateX(-270px);
-  transform: translateX(-270px);
+  -webkit-transform: translateX(-210px);
+  -moz-transform: translateX(-210px);
+  -o-transform: translateX(-210px);
+  -ms-transform: translateX(-210px);
+  transform: translateX(-210px);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   -moz-transition: -moz-transform 0.3s ease-in-out;
   -o-transition: -o-transform 0.3s ease-in-out;
   -ms-transition: -ms-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
+}
+.cs-offcanvasBody.rightActive .cs-header-slidable {
+  margin-left: -210px;
+}
+.cs-offcanvasBody.leftActive .cs-header-slidable {
+  margin-left: 210px;
 }
 .cs-toggleMenu {
   padding-left: 0;
