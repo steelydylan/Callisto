@@ -1107,7 +1107,6 @@ a {
   background-color: #fff;
   margin-bottom: 10px;
 }
-transition margin-left 0.3s ease-in-out,
 .cs-header_nav {
   height: 50px;
   padding: 0;
@@ -1264,6 +1263,13 @@ transition margin-left 0.3s ease-in-out,
   -o-transition: -o-transform 0.3s ease-in-out;
   -ms-transition: -ms-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
+}
+.cs-header-slidable {
+  -webkit-transition: margin-left 0.3s ease-in-out;
+  -moz-transition: margin-left 0.3s ease-in-out;
+  -o-transition: margin-left 0.3s ease-in-out;
+  -ms-transition: margin-left 0.3s ease-in-out;
+  transition: margin-left 0.3s ease-in-out;
 }
 .cs-offcanvasBody.rightActive .cs-header-slidable {
   margin-left: -210px;

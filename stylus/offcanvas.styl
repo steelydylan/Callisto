@@ -54,6 +54,9 @@
     transform translateX(-(offcanvasWidth))
     transition transform 0.3s ease-in-out
 
+.{prefix}header-slidable 
+    transition margin-left 0.3s ease-in-out
+
 .{prefix}offcanvasBody.rightActive .{prefix}header-slidable
         margin-left -(offcanvasWidth)
 .{prefix}offcanvasBody.leftActive .{prefix}header-slidable
