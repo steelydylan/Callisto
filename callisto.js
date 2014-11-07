@@ -76,7 +76,7 @@ $(function(){
 				$(".cs-offcanvas").removeClass("active");
 				$(".cs-offcanvas-sidebar").removeClass('rightActive');
 				$(".cs-offcanvas-sidebar").removeClass('leftActive');
-			},300);
+			},210);
 		}
 	});
 	$(".cs-toggleMenu_expandable").click(function(e){
