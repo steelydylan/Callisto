@@ -119,7 +119,7 @@ $(function(){
 			}
 		}
 	});
-	$(document).on("click",".cs-slider-btn",function(){
+	$(document).on("click touchstart",".cs-slider-btn",function(){
 		$(".cs-slider-btn").removeClass('active');
 		$(this).addClass('active');
 		var index = $(".cs-slider-btn").index(this);
