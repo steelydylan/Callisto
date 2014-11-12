@@ -37,6 +37,7 @@
     background offcanvasSidebarBgColor
     padding-right offcanvasSidebarPadding
     padding-left offcanvasSidebarPadding
+    overflow-y scroll
 
 .{prefix}offcanvas-sidebar.active.rightActive,
 .{prefix}offcanvas-sidebar.active.leftActive
@@ -54,11 +55,10 @@
     transform translateX(-(offcanvasWidth))
     transition transform 0.3s ease-in-out
 
-.{prefix}header-slidable 
+.{prefix}header-fixed 
     transition margin-left 0.3s ease-in-out
-
-.{prefix}offcanvasBody.rightActive .{prefix}header-slidable
+.{prefix}offcanvasBody.rightActive .{prefix}header-fixed
         margin-left -(offcanvasWidth)
-.{prefix}offcanvasBody.leftActive .{prefix}header-slidable
+.{prefix}offcanvasBody.leftActive .{prefix}header-fixed
         margin-left offcanvasWidth
 

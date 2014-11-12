@@ -1107,6 +1107,12 @@ a {
   background-color: #fff;
   margin-bottom: 10px;
 }
+.cs-header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 .cs-header_nav {
   height: 50px;
   padding: 0;
@@ -1223,6 +1229,7 @@ a {
   background: #333;
   padding-right: 10px;
   padding-left: 10px;
+  overflow-y: scroll;
 }
 .cs-offcanvas-sidebar.active.rightActive,
 .cs-offcanvas-sidebar.active.leftActive {
@@ -1264,17 +1271,17 @@ a {
   -ms-transition: -ms-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
 }
-.cs-header-slidable {
+.cs-header-fixed {
   -webkit-transition: margin-left 0.3s ease-in-out;
   -moz-transition: margin-left 0.3s ease-in-out;
   -o-transition: margin-left 0.3s ease-in-out;
   -ms-transition: margin-left 0.3s ease-in-out;
   transition: margin-left 0.3s ease-in-out;
 }
-.cs-offcanvasBody.rightActive .cs-header-slidable {
+.cs-offcanvasBody.rightActive .cs-header-fixed {
   margin-left: -210px;
 }
-.cs-offcanvasBody.leftActive .cs-header-slidable {
+.cs-offcanvasBody.leftActive .cs-header-fixed {
   margin-left: 210px;
 }
 .cs-toggleMenu {
@@ -1328,4 +1335,65 @@ a {
 }
 .cs-toggleMenu_expandable li {
   background-color: #333;
+}
+.cs-slider-wrapper {
+  overflow-x: hidden;
+}
+.cs-slider {
+  zoom: 1;
+  padding-left: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+.cs-slider:before,
+.cs-slider:after {
+  content: "";
+  display: table;
+}
+.cs-slider:after {
+  clear: both;
+}
+.cs-slider li {
+  list-style-type: none;
+  float: left;
+}
+.cs-slider img {
+  width: 100%;
+  height: auto;
+}
+.cs-slider-btn-wrapper {
+  text-align: center;
+}
+.cs-slider-btn {
+  background-color: #666;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.cs-slider-btn.active {
+  background-color: #000;
+}
+.cs-input-group {
+  display: table;
+}
+.cs-input-group-btn {
+  display: table-cell;
+  padding: 5px;
+  background-color: #eee;
+  border: 1px solid #333;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.cs-input-group-form {
+  border: 1px solid #333;
+  border-right: none;
+  display: table-cell;
+  height: 37px;
+}
+.cs-input-group-form-full {
+  width: 100%;
 }
