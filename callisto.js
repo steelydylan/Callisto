@@ -24,7 +24,11 @@ $.fn.extend({
 		var cnt = Math.ceil($children.length / json.items);
 		var $btn = $("<div class='cs-slider-btn'></div>");
 		for(var i = 0; i < cnt; i++){
-			$btnWrapper.append($btn.clone());
+			var $tmp = $btn.clone()
+			if(i == 0){
+				$tmp.addClass('active');
+			}
+			$btnWrapper.append($tmp);
 		}
 		$parent.append($btnWrapper);
 		$that.attr("data-items",json.items);
