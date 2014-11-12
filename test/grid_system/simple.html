@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  <script src="../vendor.js"></script>
-  <script src="../../dist/callisto.js"></script>
-  <script src="../test.js"></script>
   <link rel="stylesheet" href="../../dist/css/callisto.css">
   <link rel="stylesheet" href="../../bower_components/mocha/mocha.css">
   <title>Simple Grid System: Test</title>
@@ -12,79 +9,37 @@
   <div id="mocha"></div>
   
   <div id="test">
-  	<div class="cs-row">
-    	<div class="cs-col-xs-1">
-    		<div class="cs-card cs-card-primary">
-    		1
-    		</div>
-    	</div>
-    	<div class="cs-col-xs-11">
-    		<div class="cs-card">
-    		11
-    		</div>
-    	</div>
-    </div>
-    <div class="cs-row">
-    	<div class="cs-col-xs-2">
-    		<div class="cs-card cs-card-primary">
-    		2
-    		</div>
-    	</div>
-    	<div class="cs-col-xs-10">
-    		<div class="cs-card">
-    		10
-    		</div>
-    	</div>
-    </div>
-    <div class="cs-row">
-    	<div class="cs-col-xs-3">
-    		<div class="cs-card cs-card-primary">
-    		3
-    		</div>
-    	</div>
-    	<div class="cs-col-xs-9">
-    		<div class="cs-card">
-    		9
-    		</div>
-    	</div>
-    </div>
-    <div class="cs-row">
-    	<div class="cs-col-xs-4">
-    		<div class="cs-card cs-card-primary">
-    		4
-    		</div>
-    	</div>
-    	<div class="cs-col-xs-8">
-    		<div class="cs-card">
-    		8
-    		</div>
-    	</div>
-    </div>
-    <div class="cs-row">
-    	<div class="cs-col-xs-5">
-    		<div class="cs-card cs-card-primary">
-    		5
-    		</div>
-    	</div>
-    	<div class="cs-col-xs-7">
-    		<div class="cs-card">
-    		7
-    		</div>
-    	</div>
-    </div>
-    <div class="cs-row">
-    	<div class="cs-col-xs-6">
-    		<div class="cs-card cs-card-primary">
-    		6
-    		</div>
-    	</div>
-    	<div class="cs-col-xs-6">
-    		<div class="cs-card">
-    		6
-    		</div>
-    	</div>
-    </div>
+    <script>
+      var sizes = [ 'xs', 'sm', 'md', 'lg' ];
+      
+      sizes.forEach(function (size) {
+        document.write('<h2>cs-col-' + size + '-*</h2>');
+        
+        for (var i = 0; i < 6; ++i) {
+          var lhs = i + 1;
+          var rhs = 12 - i - 1;
+          
+          document.write(
+            '<div class="cs-row">',
+              '<div class="cs-col-' + size + '-' + lhs + '">',
+                '<div class="cs-card cs-card-primary">',
+                  lhs,
+                '</div>',
+              '</div>',
+              '<div class="cs-col-' + size + '-' + rhs + '">',
+                '<div class="cs-card">',
+                  rhs,
+                '</div>',
+              '</div>',
+            '</div>'
+            );
+        }
+      });
+    </script>
   </div>
   
+  <script src="../vendor.js"></script>
+  <script src="../../dist/callisto.js"></script>
+  <script src="../test.js"></script>
   <script src="simple.js"></script>
 </body>
