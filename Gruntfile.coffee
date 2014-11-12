@@ -20,6 +20,7 @@ module.exports = (grunt) ->
     mocha_phantomjs:
       options:
         reporter: 'spec'
+        view: '1920x1080'
       all: ['test/**/*.html']
     
     bower_concat:

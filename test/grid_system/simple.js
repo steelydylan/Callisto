@@ -20,7 +20,7 @@ function roundWidth(width) {
 function equalsWidth(lhs_val, rhs_val) {
   var lhs = roundWidth(lhs_val);
   var rhs = roundWidth(rhs_val);
-  return lhs == rhs;
+  expect(lhs).to.equal(rhs);
 }
 
 Test.init();
@@ -41,7 +41,7 @@ $(function() {
         var percentage      = elemWidth / elemParentWidth * 100;
         
         it(className + ' width is ' + (Math.floor(validWidth * 10) / 10) + '%', function() {
-          expect(equalsWidth(validWidth, percentage)).to.be.true;
+          equalsWidth(percentage, validWidth);
         });
       }
     });
