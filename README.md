@@ -29,7 +29,7 @@ Callisto/
 ```
 
 ### How to test
-You must install the [Grunt](http://gruntjs.com), [Bower](http://bower.io), [PhantomJS](http://phantomjs.org) to the test.
+You must install the [Grunt](http://gruntjs.com), [Bower](http://bower.io), [PhantomJS](http://phantomjs.org) for the test.
 
 ```
 $ npm install
