@@ -855,16 +855,16 @@ a {
   border-radius: 3px;
   background-color: #eaeaea;
   word-wrap: break-word;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  -ms-transition: none;
-  transition: none;
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
+  -webkit-transition: all 0.5s 0.1s;
+  -moz-transition: all 0.5s 0.1s;
+  -o-transition: all 0.5s 0.1s;
+  -ms-transition: all 0.5s 0.1s;
+  transition: all 0.5s 0.1s;
+  -webkit-transform: translateY(-120%);
+  -moz-transform: translateY(-120%);
+  -o-transform: translateY(-120%);
+  -ms-transform: translateY(-120%);
+  transform: translateY(-120%);
 }
 .cs-modal_content.active {
   -webkit-transition: all 0.5s 0.1s;
@@ -897,7 +897,7 @@ a {
   background-color: #008cba;
   color: #fff;
 }
-.cs-modal-body {
+.cs-modal_body {
   padding: 20px;
 }
 .cs-btn {

@@ -8,8 +8,11 @@ $(function(){
 			$(this).find(".cs-modal_content").addClass("active");
 		},
 		hideModal:function(){
-			$(this).removeClass("active");
 			$(this).find(".cs-modal_content").removeClass("active");
+			var $that = $(this);
+			setTimeout(function(){
+				$that.removeClass("active");
+			},500);
 		},
 	});
 	$('[data-toggle="showModal"]').click(function(){
