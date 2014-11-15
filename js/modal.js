@@ -2,6 +2,16 @@
 	modal.js
 */
 $(function(){
+	$.fn.extend({
+		showModal:function(){
+			$(this).addClass("active");
+			$(this).find(".cs-modal_content").addClass("active");
+		},
+		hideModal:function(){
+			$(this).removeClass("active");
+			$(this).find(".cs-modal_content").removeClass("active");
+		},
+	});
 	$('[data-toggle="showModal"]').click(function(){
 		var target = $(this).data("target");
 		$(target).showModal();

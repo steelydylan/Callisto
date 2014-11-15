@@ -2,16 +2,6 @@
 	offcanvas.js
 */
 $(function(){
-	$.fn.extend({
-		showModal:function(){
-			$(this).addClass("active");
-			$(this).find(".cs-modal_content").addClass("active");
-		},
-		hideModal:function(){
-			$(this).removeClass("active");
-			$(this).find(".cs-modal_content").removeClass("active");
-		},
-	});
 	$("body").addClass("cs-offcanvasBody");
 	$(".cs-right-open-btn,.cs-left-open-btn").click(function(){
 		var $target = $($(this).attr("href"));

@@ -40,7 +40,6 @@ $(function(){
 			var width = parseInt($(this).parent(".cs-slider-wrapper").width());
 			var itemWidth = parseInt(width / parseInt($(this).data("items")));
 			var $children = $(this).children("li");
-			console.log(itemWidth);
 			$children.width(itemWidth);
 		});
 	})
@@ -70,6 +69,16 @@ $(function(){
 	modal.js
 */
 $(function(){
+	$.fn.extend({
+		showModal:function(){
+			$(this).addClass("active");
+			$(this).find(".cs-modal_content").addClass("active");
+		},
+		hideModal:function(){
+			$(this).removeClass("active");
+			$(this).find(".cs-modal_content").removeClass("active");
+		},
+	});
 	$('[data-toggle="showModal"]').click(function(){
 		var target = $(this).data("target");
 		$(target).showModal();
@@ -83,16 +92,6 @@ $(function(){
 	offcanvas.js
 */
 $(function(){
-	$.fn.extend({
-		showModal:function(){
-			$(this).addClass("active");
-			$(this).find(".cs-modal_content").addClass("active");
-		},
-		hideModal:function(){
-			$(this).removeClass("active");
-			$(this).find(".cs-modal_content").removeClass("active");
-		},
-	});
 	$("body").addClass("cs-offcanvasBody");
 	$(".cs-right-open-btn,.cs-left-open-btn").click(function(){
 		var $target = $($(this).attr("href"));

@@ -36,7 +36,6 @@ $(function(){
 			var width = parseInt($(this).parent(".cs-slider-wrapper").width());
 			var itemWidth = parseInt(width / parseInt($(this).data("items")));
 			var $children = $(this).children("li");
-			console.log(itemWidth);
 			$children.width(itemWidth);
 		});
 	})
